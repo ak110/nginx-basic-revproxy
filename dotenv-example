@@ -1,0 +1,6 @@
+# リバースプロキシとして待ち受けるポート番号
+PORT=80
+# 転送先URL
+PROXY_PASS=http://webserver/
+# Basic認証のrealm
+AUTH_REALM=BasicAuth ReverseProxy
