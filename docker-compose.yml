@@ -8,7 +8,6 @@ services:
     volumes:
       - ./nginx.conf:/nginx.conf
       - ./htpasswd:/etc/nginx/conf.d/htpasswd
-      - ./logs:/var/log/nginx
     environment:
       - PROXY_PASS=${PROXY_PASS}
       - AUTH_REALM=${AUTH_REALM}
@@ -17,5 +16,5 @@ services:
     logging:
       options:
         max-size: "1m"
-        max-file: "10"
+        max-file: "3"
 
